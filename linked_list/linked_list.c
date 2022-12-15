@@ -29,11 +29,15 @@ void insert_node(struct node **head, int data)
 void print_list(struct node *head)
 {
   struct node *current = head;
+  int          size    = 0;
+  printf("This is the list: [");
   while (current != NULL)
   {
     printf("%d ", current->data);
+    size++;
     current = current->next;
   }
+  printf("]. The list size is: %d", size);
   printf("\n");
 }
 
@@ -96,6 +100,8 @@ int main(int argc, char **argv)
   struct node *head = NULL;
 
   // Insert some nodes at the beginning of the list
+  print_list(head);
+
   insert_node(&head, 5);
   insert_node(&head, 10);
   insert_node(&head, 15);

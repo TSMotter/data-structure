@@ -66,7 +66,7 @@ int peek(stack *s)
   }
 }
 
-int main()
+int main(int argc, char **argv)
 {
   stack s;
   s.top = -1;
@@ -78,6 +78,8 @@ int main()
 
   printf("Popping: %d\n", pop(&s));
   printf("Peeking: %d\n", peek(&s));
+  printf("Popping: %d\n", pop(&s));
+  printf("Popping: %d\n", pop(&s));
   printf("Popping: %d\n", pop(&s));
   printf("Popping: %d\n", pop(&s));
 

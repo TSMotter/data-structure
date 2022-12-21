@@ -11,4 +11,9 @@
 ./bbuild.sh <target> run
 ```
 
-- Where "`<target>`" is the name of one of the folders containing source code, like array, helloworld, etc
+- Where "`<target>`" is the name of one of the folders containing source code, like helloworld, array, queue, etc
+
+- To create a new folder (target):
+```bash
+./create.sh <name>
+```

@@ -11,5 +11,5 @@ echo "Running clang-formatter..."
 # xargs executes echo by default. You many also instruct it to read data from a file 
 # instead of stdin.
 
-find . -iname '*.c'| grep --invert-match './build\|./unity' | xargs clang-format -i -style=file
+find . -iname '*.c' | grep --invert-match './build\|./unity' | xargs clang-format -i -style=file
 
